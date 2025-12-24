@@ -1,0 +1,4 @@
+module SimpleCppModule
+plugin simplecppmoduleplugin
+classname SimpleCppModulePlugin
+typeinfo plugins.qmltypes

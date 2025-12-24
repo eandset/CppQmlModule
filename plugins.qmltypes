@@ -1,0 +1,21 @@
+import QtQuick.tooling 1.2
+
+Module {
+    Component {
+        name: "CppText"
+        prototype: "QQuickItem"
+        exports: [
+            "SimpleCppModule/CppText 1.0"
+        ]
+        Property {
+            name: "text"
+            type: "string"
+            read: "text"
+            write: "setText"
+            notify: "textChanged"
+        }
+        Signal {
+            name: "textChanged"
+        }
+    }
+}
